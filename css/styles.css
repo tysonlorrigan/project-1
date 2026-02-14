@@ -4,6 +4,9 @@ ul {
   padding: 0;
   background-color: #333333;
   display: flex;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 li {
