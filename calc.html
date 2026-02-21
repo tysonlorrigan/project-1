@@ -28,18 +28,26 @@
         let c = Number(a) / Number(b);
         document.getElementById("ans").innerHTML = c;
       }
+      function expo() {
+        let a = document.getElementById("fn").value;
+        let b = document.getElementById("sn").value;
+        let c = Number(a) ** Number(b);
+        document.getElementById("ans").innerHTML = c;
+      }
     </script>
   </head>
   <body>
 
     <h3>This is a simple JavaScript and HTML calculator.</h3>
 
-    <p> First number: <input id="fn">
-    <p> Second number: <input id="sn">
-    <button onclick="add()"> + </button>
-    <button onclick="sub()"> - </button>
-    <button onclick="mult()"> x </button>
-    <button onclick="divi()"> / </button>
+    <p> First number: <input id="fn"> </p>
+    <p> Second number: <input id="sn"> </p>
+    <p>
+      <button onclick="add()"> + </button>
+      <button onclick="sub()"> - </button>
+      <button onclick="mult()"> x </button>
+      <button onclick="divi()"> / </button>
+      <button onclick="expo()"> ^ </button>
     </p>
     <p>
       Your answer is: <span id="ans"> ___________ </span>
