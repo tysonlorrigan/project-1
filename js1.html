@@ -11,11 +11,15 @@
     <p> What is your name? <input id="firstname">
     <button onclick="fname()"> Enter </button>
     </p>
+    <p>
+      Hi <span id="ans"> ________________ </span>
+    </p>
 
     <script>
       function fname() {
         let a = document.getElementById("firstname").value;
-        window.alert(a);
+        // window.alert(a);
+        document.getElementById("ans").innerHTML = a;
       }
     </script>
     
