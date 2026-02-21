@@ -2,26 +2,27 @@
 <html>
   <head>
     <title>Sample Javascript IO Page</title>
-    
+
+    <script>
+      function add() {
+        let a = document.getElementById("fn").value;
+        let b = document.getElementById("sn").value;
+        window.alert(a)
+        window.alert(b)
+      }
+    </script>
   </head>
   <body>
 
     <h3>This is a sample javaScript and HTML document.</h3>
 
-    <p> What is your name? <input id="firstname">
-    <button onclick="fname()"> Enter </button>
+    <p> First number: <input id="fn">
+    <p> Second number: <input id="sn">
+    <button onclick="add()"> Add the numbers </button>
     </p>
     <p>
-      Hi <span id="ans"> ________________ </span>
+      Your answer is: <span id="ans"> ________________ </span>
     </p>
-
-    <script>
-      function fname() {
-        let a = document.getElementById("firstname").value;
-        // window.alert(a);
-        document.getElementById("ans").innerHTML = a;
-      }
-    </script>
     
   </body>
 </html>
